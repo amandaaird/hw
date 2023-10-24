@@ -1,4 +1,4 @@
-tags_df = pd.read_csv(PairwiseCosineDiversityEvaluator.tag_data_path)
+tags_df = pd.read_csv('Homework 2 data/sample-genome-scores.csv')
 movie_ids = np.unique(tags_df['movieId'])
 print(len(movie_ids))
 tag_combinations = combinations(movie_ids, 2)    
