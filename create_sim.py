@@ -13,3 +13,4 @@ for tag1, tag2 in tag_combinations:
             sim = cosine_similarity([item_tags1], [item_tags2])
             sim_df.loc[len(sim_df.index)]=[tag1,tag2,float(sim)]
             #print(sim)
+sim_df.to_csv('sims')
